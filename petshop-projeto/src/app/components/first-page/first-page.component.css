@@ -36,7 +36,7 @@ section.slider {
 }
 
 .nav-manual .manual-btn, .nav-auto div {
-    border: 1px solid black;
+    border: 1px solid orange;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -51,15 +51,15 @@ section.slider {
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: black;
+    background-color: orange;
 }
 
 #radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: black;
+    background-color: orange;
 }
 
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: black;
+    background-color: orange;
 }
 
 #radio1:checked ~ .primeiro {
