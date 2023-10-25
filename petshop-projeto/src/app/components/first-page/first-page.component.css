@@ -30,7 +30,7 @@ section.slider {
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 51%;
     display: flex;
     justify-content: center;
 }
