@@ -25,6 +25,10 @@ header {
     width: 50px; /* Defina a largura desejada */
     height: 90; /* A altura será ajustada automaticamente para manter a proporção */
 }
+.logo a {
+    text-decoration: none;
+    color: white;
+}
 
 /* Estilize a barra de pesquisa */
 .search-bar {
@@ -35,7 +39,9 @@ header {
 /* Aumente o tamanho da caixa de pesquisa apenas para os lados */
 .search-bar input[type="search"] {
     padding: 5px;
-    width: 400px; /* Aumente a largura horizontal conforme necessário */
+    flex: 1;
+    border: 1px solid black;
+    width: 500px; /* Aumente a largura horizontal conforme necessário */
     background-image: url(/assets/icons8-pesquisar-30.png); /* Adicione a imagem de lupa como fundo */
     background-size: 20px; /* Tamanho da imagem de lupa */
     background-position: right center; /* Posicione a imagem à direita no centro */
