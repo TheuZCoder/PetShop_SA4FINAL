@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,7 +11,6 @@ import { FirstPageComponent } from './components/first-page/first-page.component
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    FirstPageComponent
   ],
   imports: [
     BrowserModule,
