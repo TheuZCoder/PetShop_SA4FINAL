@@ -22,3 +22,17 @@ body{
     height: 50px;
     width: 50px;
 }
+.nav .icones{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-right: 5%;
+}
+.nav .icones .select1{
+    margin-right: 100px;
+    width: 30px;
+}
+.nav .icones img {
+    height: 30px;
+}
