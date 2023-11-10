@@ -1,67 +1,67 @@
-/* Estilize o corpo e defina as margens para zero */
 body {
     margin: 0;
     padding: 0;
 }
 
-/* Estilize o cabeçalho */
-header {
+.nav {
     background-color: #9A6AB4;
     color: #fff;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Estilize o logotipo */
-.logo {
-    margin-left: 20px; /* Ajuste a margem à esquerda conforme necessário */
+.nav .logo {
+    margin-left: 5%;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav .logo-img img {
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+}
+
+.nav .search-bar {
     display: flex;
     align-items: center;
-    
-}
-.logo img {
-    width: 50px; /* Defina a largura desejada */
-    height: 90; /* A altura será ajustada automaticamente para manter a proporção */
+    flex-grow: 0,5; /* Ocupa o espaço restante */
 }
 
-/* Estilize a barra de pesquisa */
-.search-bar {
-    flex-grow: 1; /* Isso faz com que a barra de pesquisa ocupe o espaço restante no centro */
-    text-align: center;
-}
-
-/* Aumente o tamanho da caixa de pesquisa apenas para os lados */
-.search-bar input[type="search"] {
+.nav .search-bar input {
+    width: 500px;
+    align-items: center;
+    flex-grow: 0.4; /* Ocupa 40% do espaço restante */
+    margin-left: 10px;
+    color: black;
+    border: none;
     padding: 5px;
-    width: 400px; /* Aumente a largura horizontal conforme necessário */
-    background-image: url(/assets/icons8-pesquisar-30.png); /* Adicione a imagem de lupa como fundo */
-    background-size: 20px; /* Tamanho da imagem de lupa */
-    background-position: right center; /* Posicione a imagem à direita no centro */
-    background-repeat: no-repeat; /* Não repita a imagem de fundo */
+   
 }
 
-/* Estilize o botão de pesquisa */
-
-/* Estilize a imagem do usuário */
-.usuario img {
-    max-width: 24px; /* Ajuste o tamanho máximo da imagem do usuário conforme necessário */
-    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
-    margin-right: 140px; /* Adicione espaço à direita da imagem do usuário */
+.nav .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-/* Estilize a imagem do carrinho */
-.carrinho img{
-    max-width: 24px; /* Ajuste o tamanho máximo da imagem do carrinho conforme necessário */
-    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
-    margin-right: 45px; /* Remova a margem à direita da imagem do carrinho */
-    margin-left: -100px; /* Adicione margem à esquerda da imagem do carrinho */
+.nav .icones {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-right: 5%;
 }
 
-.carrinho{
-    display: flex;
-    margin-right: 80px; /* Remova a margem à direita da imagem do carrinho */
-    margin-left: 30px; /* Adicione margem à esquerda da imagem do carrinho */
+.nav .icones .select1 {
+    margin-right: 100px;
+    width: 30px;
 }
 
+.nav .icones img {
+    height: 30px;
+}
