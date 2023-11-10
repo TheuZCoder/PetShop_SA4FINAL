@@ -97,7 +97,10 @@ body {
     }
 
     .nav .search-bar input {
-        width: calc(90% - 40px); /* Ajusta a largura da barra de pesquisa para acomodar o ícone do menu */
+        width: calc(95% - 40px); /* Ajusta a largura da barra de pesquisa para acomodar o ícone do menu */
+    }
+    .nav .search-bar button img{
+        height: 15px;
     }
 
     .nav .icones .select1, .nav .icones .select2 {
