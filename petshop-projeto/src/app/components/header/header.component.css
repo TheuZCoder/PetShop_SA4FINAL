@@ -49,14 +49,20 @@ body {
     border: none;
     cursor: pointer;
 }
+.nav .search-bar button img {
+    height: 25px;
+}
 
 .nav .icones {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     margin-right: 5%;
     flex: 1; /* Ocupa 100% da largura em telas menores */
+}
+.nav .icones img {
+    height: 30px;
 }
 
 .nav .icones .select1, .nav .icones .select2 {
