@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
-
 
 @Component({
   selector: 'app-carrosel',
