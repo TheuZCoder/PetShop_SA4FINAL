@@ -12,13 +12,13 @@ export class CarroselComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: './assets/img/1.png',
+      src: '../assets/img/1.png',
     };
     this.slides[1] = {
-      src: './assets/img/2.png',
+      src: '../assets/img/2.png',
     }
     this.slides[2] = {
-      src: './assets/img/3.png',
+      src: '../assets/img/3.png',
     }
   }
 }
