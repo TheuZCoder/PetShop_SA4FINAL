@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginCadastroComponent } from './components/login-cadastro/login-cadastro.component';
 import { CarroselComponent } from './components/carrosel/carrosel.component';
+import { CarouselModule } from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CarroselComponent } from './components/carrosel/carrosel.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
