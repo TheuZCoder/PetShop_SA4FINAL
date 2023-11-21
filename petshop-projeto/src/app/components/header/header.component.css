@@ -9,10 +9,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+    padding: 10px; /* Adiciona algum espaço interno */
 }
 
 .nav .logo {
     margin-left: 5%;
+    flex: 1; /* Ocupa 100% da largura em telas menores */
 }
 
 .nav .logo a {
@@ -22,26 +25,23 @@ body {
 
 .nav .logo-img img {
     vertical-align: middle;
-    height: 50px;
-    width: 50px;
+    width: 50px; /* Largura fixa para a imagem */
+    height: 50px; /* Altura fixa para a imagem */
 }
 
 .nav .search-bar {
     display: flex;
     align-items: center;
-    flex-grow: 0,5; /* Ocupa o espaço restante */
+    flex: 1; /* Ocupa 100% da largura em telas menores */
+    margin-left: 0px;
 }
 
 .nav .search-bar input {
-    width: 500px;
-    align-items: center;
-    flex-grow: 0.4; /* Ocupa 40% do espaço restante */
-    margin-left: 10px;
+    width: 100%;
     color: black;
     border: none;
     padding: 5px;
     border-radius: 10px;
-   
 }
 
 .nav .search-bar button {
@@ -49,20 +49,67 @@ body {
     border: none;
     cursor: pointer;
 }
+.nav .search-bar button img {
+    height: 25px;
+}
 
 .nav .icones {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     margin-right: 5%;
+    flex: 1; /* Ocupa 100% da largura em telas menores */
 }
-
-.nav .icones .select1 {
-    margin-right: 100px;
-    width: 30px;
-}
-
 .nav .icones img {
     height: 30px;
+}
+
+.nav .icones .select1, .nav .icones .select2 {
+    display: block; /* Exibe os links normalmente em telas maiores */
+}
+
+.menu-icon {
+    display: none; /* Oculta o ícone do menu em telas maiores */
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores, por exemplo, dispositivos móveis */
+    .nav {
+        flex-direction: column; /* Coloca os itens em uma coluna em telas menores */
+        align-items: flex-start;
+        padding: 20px; /* Aumenta o espaço interno */
+    }
+
+    .nav .logo, .nav .search-bar, .nav .icones {
+        margin: 0;
+        width: 100%; /* Ocupa 100% da largura em telas menores */
+    }
+
+    .nav .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav .search-bar {
+        display: flex; /* Mantém a exibição da barra de pesquisa e do ícone do menu na mesma linha */
+        justify-content: space-between; /* Coloca os itens em lados opostos da barra de pesquisa */
+        margin-top: 20px;
+    }
+
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu em telas menores */
+        cursor: pointer;
+    }
+
+    .nav .search-bar input {
+        width: calc(95% - 40px); /* Ajusta a largura da barra de pesquisa para acomodar o ícone do menu */
+    }
+    .nav .search-bar button img{
+        height: 15px;
+    }
+
+    .nav .icones .select1, .nav .icones .select2 {
+        display: none; /* Oculta os links em telas menores */
+    }
 }

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginCadastroComponent } from './components/login-cadastro/login-cadastro.component';
+import { CarroselComponent } from './components/carrosel/carrosel.component';
 
 @NgModule({
   declarations: [
@@ -12,10 +13,12 @@ import { LoginCadastroComponent } from './components/login-cadastro/login-cadast
     HeaderComponent,
     FooterComponent,
     LoginCadastroComponent,
+    CarroselComponent,
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
