@@ -1,36 +1,24 @@
-<div class="container">
-    <div class="row">
-
-        <div class="pen-title">
-            <h1>Bem vindo!</h1>
-        </div>
-        <div class="container">
-            <div class="card"></div>
-            <div class="card">
-                <h1 class="title">Login</h1>
-                <form>
-                    <div class="input-container">
-                        <input type="text" id="Username" required="required" />
-                        <label for="Username">Nome de usuário</label>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="input-container">
-                        <input type="password" id="Password" required="required" />
-                        <label for="Password">Senha</label>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="button-container">
-                        <button><span>Login</span></button>
-                    </div>
-                    <h5 class="titleRegistrar">É novo por aqui?</h5>
-                    <br>
-                    <div class="button-container ">
-                        <button><span>Registre-se</span></button>
-                    </div>
-                    <div class="footer"><a href="#">Esqueceu sua senha?</a></div>
+<body>
+    <div class="main">  	
+        <input type="checkbox" id="chk" aria-hidden="true">
+    
+            <div class="login">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input class="input" type="email" name="email" placeholder="Email: " required="">
+                    <input class="input" type="password" name="pswd" placeholder="Senha:" required="">
+                    <button>Login</button>
                 </form>
             </div>
-        </div>
-
+    
+      <div class="register">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Cadastre-se</label>
+                    <input class="input" type="text" name="txt" placeholder="Nome:" required="">
+                    <input class="input" type="email" name="email" placeholder="Email:" required="">
+                    <input class="input" type="password" name="pswd" placeholder="Senha:" required="">
+                    <button>Cadastre-se</button>
+                </form>
+            </div>
     </div>
-</div>
+</body>

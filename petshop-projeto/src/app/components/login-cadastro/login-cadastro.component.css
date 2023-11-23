@@ -1,196 +1,114 @@
 body {
-    background: #e6e4e2;
-    color: #E88F4A;
-    font-family: 'RobotoDraft', 'Roboto', sans-serif;
-    font-size: 14px;
-  }
-  
-  /* Pen Title */
-  .pen-title {
-    text-align: center;
-    letter-spacing: 2px;
-  }
-  .pen-title h1 { 
-    font-size: 40px;
-    font-weight: 300;
-  }
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:#e0dede;
+}
 
-  /* Container */
-  .container {
-    position: relative;
-    max-width: 460px;
-    width: 100%;
-    margin: 0 auto 100px;
-  }
- 
-  
-  /* Card */
-  .card {
-    position: relative;
-    background: #ffffff;
-    border-radius: 5px;
-    padding: 60px 0 40px 0;
-    box-sizing: border-box;
-    box-shadow: 0 1px 3px ;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
+.main {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 500px;
+  transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E88F4A;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 7px 7px 10px 3px #24004628;
+}
 
-  }
-  .card:first-child {
-    background: #fafafa;
-    height: 10px;
-    border-radius: 5px 5px 0 0;
-    margin: 0 10px;
-    padding: 0;
-  }
-  .card .title {
-    position: relative;
-    border-left: 5px solid #83BD4C;
-    padding: 10px 0 10px 50px;
-    color:#83BD4C;
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .card .titleRegistrar {
-    position: relative;
-    border-left: 5px solid #83BD4C;
-    margin: 0 0 35px;
-    padding: 10px 0 10px 50px;
-    color:#83BD4C;
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .card .input-container {
-    position: relative;
-    margin: 0 60px 50px;
-  }
-  .card .input-container input {
-    outline: none;
-    z-index: 1;
-    position: relative;
-    background: none;
-    width: 100%;
-    height: 54px;
-    border: 0;
-    color: #E88F4A;
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .card .input-container input:focus ~ label {
-    color: #83BD4C;
-    -webkit-transform: translate(-12%, -50%) scale(0.75);
-            transform: translate(-12%, -50%) scale(0.75);
-  }
-  .card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
-    width: 50%;
-  }
-  .card .input-container input:valid ~ label {
-    color: #83BD4C;
-    -webkit-transform: translate(-12%, -50%) scale(0.75);
-            transform: translate(-12%, -50%) scale(0.75);
-  }
-  .card .input-container label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #E88F4A;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 60px;
-    -webkit-transition: 0.2s ease;
-    transition: 0.2s ease;
-  }
-  .card .input-container .bar {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #83BD4C;
-    width: 100%;
-    height: 1px;
-  }
-  .card .input-container .bar:before, .card .input-container .bar:after {
-    content: '';
-    position: absolute;
-    background: #83BD4C;
-    width: 0;
-    height: 2px;
-    -webkit-transition: .2s ease;
-    transition: .2s ease;
-  }
-  
- 
-  .card .button-container {
-    text-align: center;
-  }
-  .card .button-container button {
-    outline: 0;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    background: 0;
-    width: 350px;
-    border: 2px solid #e3e3e3;
-    padding: 20px 0;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
-    overflow: hidden;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-  }
-  .card .button-container button span {
-    position: relative;
-    z-index: 1;
-    color: #ddd;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-  }
-  .card .button-container button:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    background: #83BD4C;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin: -15px 0 0 -15px;
-    opacity: 0;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-  }
-  .card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
-    border-color: #83BD4C;
-  }
-  .card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
-    color: #E88F4A;
-  }
-  
-  .card .button-container button:active:before, .card .button-container button:focus:before {
-    opacity: 1;
-    -webkit-transform: scale(10);
-    transform: scale(10);
-  }
-  .card .footer {
-    margin: 40px 0 0;
-    color: #d3d3d3;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-  }
-  .card .footer a {
-    color: inherit;
-    text-decoration: none;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-  }
-  .card .footer a:hover {
-    color: #83BD4C;
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+}
 
+/*checkbox to switch from sign up to login*/
+#chk {
+  display: none;
+}
 
-  
+/*Login*/
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login label {
+  margin: 25% 0 5%;
+}
+
+label {
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  background: #e0dede;
+  padding: 4px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+/*Register*/
+.register {
+  width: 100%;
+  height: 100%;
+  background: #83BD4C;
+  border-radius: 100% / 10%;
+  transform: translateY(5%);
+  transition: .8s ease-in-out;
+}
+
+.register label {
+  color: #fff;
+  transform: scale(.6);
+}
+
+#chk:checked ~ .register {
+  transform: translateY(-60%);
+}
+
+#chk:checked ~ .register label {
+  transform: scale(1);
+  margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label {
+  transform: scale(.6);
+  margin: 5% 0 5%;
+}   
+/*Button*/
+.form button {
+  width: 85%;
+  height: 40px;
+  margin: 12px auto 10%;
+  color: #fff;
+  background: #83BD4C;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.form button:hover {
+  background-color: #E88F4A;
+}
+
