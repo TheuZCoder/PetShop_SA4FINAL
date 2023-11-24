@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA,NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +8,8 @@ import { LoginCadastroComponent } from './components/login-cadastro/login-cadast
 import { CarouselModule } from '@coreui/angular';
 import { HomeComponent } from './view/home/home.component';
 import { CarroselComponent } from './components/carrosel/carrosel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { CarroselComponent } from './components/carrosel/carrosel.component';
     FooterComponent,
     LoginCadastroComponent,
     HomeComponent,
-    CarroselComponent
+    CarroselComponent,
+    CarouselComponent
   ],
 
   imports: [
@@ -25,6 +28,7 @@ import { CarroselComponent } from './components/carrosel/carrosel.component';
     CarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

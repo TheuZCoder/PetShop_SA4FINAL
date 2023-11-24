@@ -1,0 +1,19 @@
+swiper-container {
+    width: 100%;
+    height: 450px;
+}
+
+swiper-slide {}
+
+swiper-container img {
+    height: auto;
+   width: 1880px;
+   
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
