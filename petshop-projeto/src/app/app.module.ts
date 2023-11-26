@@ -7,7 +7,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginCadastroComponent } from './components/login-cadastro/login-cadastro.component';
 import { CarouselModule } from '@coreui/angular';
 import { HomeComponent } from './view/home/home.component';
-import { CarroselComponent } from './components/carrosel/carrosel.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
 
@@ -18,7 +17,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FooterComponent,
     LoginCadastroComponent,
     HomeComponent,
-    CarroselComponent,
     CarouselComponent
   ],
 
