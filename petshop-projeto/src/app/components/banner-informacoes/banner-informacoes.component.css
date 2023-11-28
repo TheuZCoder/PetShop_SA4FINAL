@@ -1,0 +1,28 @@
+
+.banner {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.container-fora{
+    border: solid 1px black;
+}
+
+h1 {
+    color: #333;
+    font-family: sans-serif;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 10px;
+}

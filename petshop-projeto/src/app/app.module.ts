@@ -8,6 +8,7 @@ import { LoginCadastroComponent } from './components/login-cadastro/login-cadast
 import { CarouselModule } from '@coreui/angular';
 import { HomeComponent } from './view/home/home.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { BannerInformacoesComponent } from './components/banner-informacoes/banner-informacoes.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FooterComponent,
     LoginCadastroComponent,
     HomeComponent,
-    CarouselComponent
+    CarouselComponent,
+    BannerInformacoesComponent
   ],
 
   imports: [
