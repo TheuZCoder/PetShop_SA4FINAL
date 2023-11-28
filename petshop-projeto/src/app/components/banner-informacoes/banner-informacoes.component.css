@@ -2,10 +2,18 @@
 .banner {
     text-align: center;
     background-color: #f0f0f0;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 55vh;
+    justify-content: center;
 }
 .container-fora{
-    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    justify-content: space-around;
+    width: 85%;
+    height: 40vh;
 }
 
 h1 {
@@ -23,6 +31,8 @@ img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 8px;
-    margin: 0 10px;
+
+}
+.img-card{
+    
 }
