@@ -1,3 +1,4 @@
+/* Estilos padrão para o carousel */
 swiper-container {
     width: auto;
     height: 320px;
@@ -7,7 +8,6 @@ swiper-container img {
     aspect-ratio: 48/9;
     height: 100%;
     width: auto;
-   
 }
 
 .check {
@@ -16,4 +16,17 @@ swiper-container img {
     overflow: hidden;
     width: 100%;
     height: 100%;
+}
+
+/* Estilos para dispositivos móveis (largura máxima de 600px) */
+@media screen and (max-width: 600px) {
+    swiper-container {
+        height: 200px; /* Ajuste a altura para dispositivos móveis */
+    }
+
+    swiper-container img {
+        aspect-ratio: auto / 1; /* Altere a razão de aspecto para a largura da imagem ser ajustável */
+        max-width: 100%; /* Garanta que a largura da imagem não ultrapasse a largura do contêiner pai */
+        height: auto; /* Mantenha a proporção da imagem */
+    }
 }
