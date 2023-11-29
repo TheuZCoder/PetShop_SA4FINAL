@@ -52,7 +52,11 @@ img {
         max-width: 45px;
         max-height: 45px;
     }
-    .text-container{
-       
+    .letra-container{
+        font-size: small;
+    }
+    .img-badge{
+        max-width: 30px;
+        max-height: 30px;
     }
 }
