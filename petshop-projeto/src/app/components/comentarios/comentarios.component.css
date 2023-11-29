@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.comment {
+    margin-bottom: 40px;
+}
+
+.comment-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.comment-icon {
+    margin-right: 15px;
+}
+
+.comment-icon img {
+    width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-text {
+    width: 100%;
+}
+
+.comment-text p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.comment-author {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}

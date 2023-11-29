@@ -9,6 +9,7 @@ import { CarouselModule } from '@coreui/angular';
 import { HomeComponent } from './view/home/home.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { BannerInformacoesComponent } from './components/banner-informacoes/banner-informacoes.component';
+import { ComentariosComponent } from './components/comentarios/comentarios.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BannerInformacoesComponent } from './components/banner-informacoes/bann
     LoginCadastroComponent,
     HomeComponent,
     CarouselComponent,
-    BannerInformacoesComponent
+    BannerInformacoesComponent,
+    ComentariosComponent
   ],
 
   imports: [
