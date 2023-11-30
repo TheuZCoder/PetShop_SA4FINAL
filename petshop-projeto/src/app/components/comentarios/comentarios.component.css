@@ -5,13 +5,18 @@ body {
 }
 
 .comment-section {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
     margin: 50px auto;
     text-align: center;
+    overflow: auto;
+    max-height: 45dvh;
 }
 
 .comment {
     margin-bottom: 40px;
+   
 }
 
 .comment-item {
@@ -47,4 +52,16 @@ body {
     font-style: italic;
     color: #555;
     margin-top: 10px;
+}
+
+.comment-section::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.comment-section::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Cor da barra de rolagem */
+}
+
+.comment-section::-webkit-scrollbar-track {
+    background: transparent;
 }
