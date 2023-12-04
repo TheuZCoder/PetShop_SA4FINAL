@@ -10,6 +10,7 @@ import { HomeComponent } from './view/home/home.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { BannerInformacoesComponent } from './components/banner-informacoes/banner-informacoes.component';
 import { ComentariosComponent } from './components/comentarios/comentarios.component';
+import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ComentariosComponent } from './components/comentarios/comentarios.compo
     HomeComponent,
     CarouselComponent,
     BannerInformacoesComponent,
-    ComentariosComponent
+    ComentariosComponent,
+    SobreNosComponent
   ],
 
   imports: [
