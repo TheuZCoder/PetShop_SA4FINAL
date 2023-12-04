@@ -11,6 +11,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { BannerInformacoesComponent } from './components/banner-informacoes/banner-informacoes.component';
 import { ComentariosComponent } from './components/comentarios/comentarios.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
     CarouselComponent,
     BannerInformacoesComponent,
     ComentariosComponent,
-    SobreNosComponent
+    SobreNosComponent,
+    SideNavComponent
   ],
 
   imports: [
