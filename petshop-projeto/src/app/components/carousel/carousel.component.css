@@ -25,7 +25,18 @@ swiper-container img {
     }
 
     swiper-container img {
-        aspect-ratio: auto / 1; /* Altere a razão de aspecto para a largura da imagem ser ajustável */
+        aspect-ratio: auto / 9; /* Altere a razão de aspecto para a largura da imagem ser ajustável */
+        max-width: 100%; /* Garanta que a largura da imagem não ultrapasse a largura do contêiner pai */
+        height: auto; /* Mantenha a proporção da imagem */
+    }
+}
+@media screen and (max-width: 1360px) {
+    swiper-container {
+        height: 300px; /* Ajuste a altura para dispositivos móveis */
+    }
+
+    swiper-container img {
+        aspect-ratio: 57 / 9; /* Altere a razão de aspecto para a largura da imagem ser ajustável */
         max-width: 100%; /* Garanta que a largura da imagem não ultrapasse a largura do contêiner pai */
         height: auto; /* Mantenha a proporção da imagem */
     }
