@@ -11,6 +11,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { BannerInformacoesComponent } from './components/banner-informacoes/banner-informacoes.component';
 import { ComentariosComponent } from './components/comentarios/comentarios.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
+import { AgendamentoComponent } from './components/agendamento/agendamento.component';
 
 
 
@@ -25,6 +26,7 @@ import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
     BannerInformacoesComponent,
     ComentariosComponent,
     SobreNosComponent,
+    AgendamentoComponent,
   ],
 
   imports: [

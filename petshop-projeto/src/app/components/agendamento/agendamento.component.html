@@ -1,0 +1,36 @@
+<body>
+    <div class="visitor-container">
+        <div class="visitor-form">
+            <h2> Agende sua Visita! </h2>
+            <form id="visitor-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data de Visita:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="submitForm()">Enviar</button>
+                    <button type="button" class="clean-btn" onclick="clearForm()">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="customModal" class="modal">
+        <div id="modalContent" class="modal-content"></div>
+        <span id="closeModalBtn" class="modal-btn" onclick="closeModal()">Fechar</span>
+    </div>
+
+    <script src="visita.js"></script>
+</body>
