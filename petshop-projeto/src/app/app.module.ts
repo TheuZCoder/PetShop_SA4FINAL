@@ -14,6 +14,7 @@ import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     BannerInformacoesComponent,
     ComentariosComponent,
     SobreNosComponent,
-    SideNavComponent
+    SideNavComponent,
   ],
 
   imports: [
