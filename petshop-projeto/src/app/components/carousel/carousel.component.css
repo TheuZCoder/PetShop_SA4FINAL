@@ -22,6 +22,7 @@ swiper-container img {
 @media screen and (max-width: 600px) {
     swiper-container {
         height: 200px; /* Ajuste a altura para dispositivos móveis */
+        display: none;
     }
 
     swiper-container img {
