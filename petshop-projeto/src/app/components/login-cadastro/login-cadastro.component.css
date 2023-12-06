@@ -4,15 +4,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #e0dede;
+
 }
 
 .main {
   width: 100%;
   max-width: 700px;
   margin: auto;
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
