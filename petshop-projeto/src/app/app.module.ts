@@ -13,6 +13,8 @@ import { ComentariosComponent } from './components/comentarios/comentarios.compo
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 import { AgendamentoComponent } from './components/agendamento/agendamento.component';
 import { LoginComponent } from './view/login/login.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
+import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
 
 
 
@@ -29,6 +31,8 @@ import { LoginComponent } from './view/login/login.component';
     SobreNosComponent,
     AgendamentoComponent,
     LoginComponent,
+    ServicosComponent,
+    PgServicoComponent,
   ],
 
   imports: [
