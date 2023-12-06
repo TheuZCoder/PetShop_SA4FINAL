@@ -12,6 +12,7 @@ import { BannerInformacoesComponent } from './components/banner-informacoes/bann
 import { ComentariosComponent } from './components/comentarios/comentarios.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 import { AgendamentoComponent } from './components/agendamento/agendamento.component';
+import { LoginComponent } from './view/login/login.component';
 
 
 
@@ -27,6 +28,7 @@ import { AgendamentoComponent } from './components/agendamento/agendamento.compo
     ComentariosComponent,
     SobreNosComponent,
     AgendamentoComponent,
+    LoginComponent,
   ],
 
   imports: [
