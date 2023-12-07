@@ -4,3 +4,6 @@ Repositório destinado a atividade avaliativa final de Front e Back End do segun
 Professores orientadores: Celso Carvalho e Diogo Takamori.
 
 # Relatório
+
+## Logo
+
