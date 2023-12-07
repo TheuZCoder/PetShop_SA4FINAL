@@ -5,7 +5,8 @@
     </div>
 
     <div class="plan-option" *ngFor="let item of itens" (click)="selecionarItem(item)" >
-      <label for="1week">
+    
+      <label >
         <div class="plan-info">
           <span class="plan-cost">{{item.preco}}</span>
           <span class="plan-name">{{item.nome}}</span>

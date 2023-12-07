@@ -55,7 +55,7 @@ body {
     justify-content: space-between;
     padding: 1rem .4rem;
     margin: 10px 0;
-    transform: all .15s ease;
+    transition: border-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor da borda */
   }
   
   .plan-option label .plan-info {
@@ -89,9 +89,10 @@ body {
     color: #83BD4C;
   }
   
-  .plan-option input:checked + label {
-    border-color: #E2B6C5;
+  .plan-option label:hover {
+    border-color: purple;
   }
+  
   
   .choose-btn {
     cursor: pointer;
