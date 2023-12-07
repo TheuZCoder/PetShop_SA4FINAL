@@ -1,0 +1,17 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CarrinhoService {
+
+  itens: any[] = [];
+
+  adicionarAoCarrinho(item: any) {
+    this.itens.push(item);
+  }
+
+  obterCarrinho() {
+    return this.itens;
+  }
+}

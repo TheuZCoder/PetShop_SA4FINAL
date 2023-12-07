@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { CarrinhoService } from '../../service/carrinho.service';
 
 @Component({
   selector: 'app-header',
@@ -19,5 +20,9 @@ export class HeaderComponent implements OnInit {
   esconderElemento(): void {
     this.displayValue = 'none';
   }
+  itens: any[];
 
+  constructor(private carrinhoService: CarrinhoService) {
+    this.itens = this.carrinhoService.obterCarrinho();
+  }
 }
