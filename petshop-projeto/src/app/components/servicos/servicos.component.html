@@ -4,8 +4,7 @@
       <span class="title">Escolha seu plano</span>
     </div>
 
-    <div class="plan-option" *ngFor="let item of itens" (click)="adicionarAoCarrinho(item)">
-      <input value="monthly" id="1week" name="plan" type="radio">
+    <div class="plan-option" *ngFor="let item of itens" (click)="selecionarItem(item)" >
       <label for="1week">
         <div class="plan-info">
           <span class="plan-cost">{{item.preco}}</span>
@@ -15,7 +14,7 @@
     </div>
 
     
-    <a href="#" title="" class="choose-btn"> Escolher plano </a>
+    <a title="" (click)="adicionarAoCarrinho()" class="choose-btn"> Escolher plano </a>
 
   </form>
 

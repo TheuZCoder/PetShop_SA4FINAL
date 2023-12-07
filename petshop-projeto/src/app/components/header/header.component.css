@@ -76,9 +76,10 @@ body {
     cursor: pointer;
 }
 .cart{
+    transform: translateX(calc( -420px));
     position: fixed;
     top: 0;
-    display: none;
+    display: block;
     width: 360px;
     min-height: 100vh;
     padding: 20px;

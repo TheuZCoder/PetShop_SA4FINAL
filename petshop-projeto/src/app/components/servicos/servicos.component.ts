@@ -18,7 +18,16 @@ export class ServicosComponent {
 
   constructor(private carrinhoService: CarrinhoService) {}
 
-  adicionarAoCarrinho(item: any) {
-    this.carrinhoService.adicionarAoCarrinho(item);
+  selecionarItem(item: any) {
+    this.itemSelecionado = item;
+  }
+
+  itemSelecionado: any;
+
+  adicionarAoCarrinho() {
+    if (this.itemSelecionado) {
+      this.carrinhoService.adicionarAoCarrinho(this.itemSelecionado);
+      this.itemSelecionado = null; // Limpar a seleção após adicionar ao carrinho
+    }
   }
 }
