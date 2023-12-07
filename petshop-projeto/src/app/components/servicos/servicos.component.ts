@@ -8,9 +8,12 @@ import { CarrinhoService } from '../../service/carrinho.service';
 })
 export class ServicosComponent {
   itens = [
-    { nome: 'Item 1', preco: 10 },
-    { nome: 'Item 2', preco: 15 },
-    { nome: 'Item 3', preco: 20 },
+    { nome: 'Diaria', preco: 'R$'+72 },
+    { nome: '1 Semana', preco: 'R$'+ 145 },
+    { nome: '2 Semana', preco: 'R$'+ 185 },
+    { nome: '3 Semana', preco: 'R$'+ 254 },
+    { nome: '1 Mês', preco: 'R$'+ 268 },
+    { nome: '6 Mêses', preco: 'R$'+'400,50' },
   ];
 
   constructor(private carrinhoService: CarrinhoService) {}
