@@ -2,8 +2,13 @@
 Repositório destinado a atividade avaliativa final de Front e Back End do segundo semestre do curso de Desenvolvimento de Sistemas do SENAI.
 <br>
 ## Professores Orientadores:
-Diogo Takamori / https://github.com/Diogotb
+Diogo Takamori / https://github.com/Diogotb <br>
 Celso Carvalho / https://github.com/celsoricarvalho
+
+## Integrantes do grupo:
+Luana Nicolau / https://github.com/luananicolau <br>
+Matheus da Silva / https://github.com/TheuZCoder <br>
+Yasmin Lima / https://github.com/Y45m1n
 
 # Relatório
 
