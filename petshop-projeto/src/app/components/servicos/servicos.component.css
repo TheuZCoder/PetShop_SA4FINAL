@@ -92,6 +92,9 @@ body {
   .plan-option label:hover {
     border-color: purple;
   }
+  .plan-option.selected label {
+    border-color: purple;
+  }
   
   
   .choose-btn {

@@ -4,7 +4,7 @@
       <span class="title">Escolha seu plano</span>
     </div>
 
-    <div class="plan-option" *ngFor="let item of itens" (click)="selecionarItem(item)" >
+    <div class="plan-option" *ngFor="let item of itens" (click)="selecionarItem(item)" [ngClass]="{ 'selected': item === itemSelecionado }" >
     
       <label >
         <div class="plan-info">
