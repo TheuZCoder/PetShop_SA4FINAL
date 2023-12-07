@@ -14,4 +14,10 @@ export class CarrinhoService {
   obterCarrinho() {
     return this.itens;
   }
+  removerDoCarrinho(item: any) {
+    const index = this.itens.indexOf(item);
+    if (index !== -1) {
+      this.itens.splice(index, 1);
+    }
+  }
 }

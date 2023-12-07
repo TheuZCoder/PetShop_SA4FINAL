@@ -25,4 +25,7 @@ export class HeaderComponent implements OnInit {
   constructor(private carrinhoService: CarrinhoService) {
     this.itens = this.carrinhoService.obterCarrinho();
   }
+  removerDoCarrinho(item: any) {
+    this.carrinhoService.removerDoCarrinho(item);
+  }
 }

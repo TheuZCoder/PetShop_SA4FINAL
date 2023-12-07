@@ -26,7 +26,7 @@
                     <div class="cart-price">{{item.preco}}</div>
                     <input type="number" value="1" class="cart-quantity">
                 </div>
-                <img src="/assets/lixeira.png" alt="" class="cart-remove">
+                <img src="/assets/lixeira.png" alt="" (click)="removerDoCarrinho(item)"  class="cart-remove">
             </div>
         </div>
         <div class="total">
