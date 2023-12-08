@@ -39,11 +39,11 @@ Banners de autoria própria do grupo.
 🌟 Usamos o site **Coolors** para definir a paleta de cores do site, após a escolha das cores pelo briefing. <br>
 - fonte: https://coolors.co/ <br>
 
-🌟 **Canva** usamos para fazer a logo e os banners do site. <br>
-- ![icons8-tela-48](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/443ac8a6-c08d-492f-836c-7a9bc53a2ab2) fonte: https://www.canva.com/ <br>
+ ![icons8-tela-48](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/443ac8a6-c08d-492f-836c-7a9bc53a2ab2) **Canva** usamos para fazer a logo e os banners do site. <br>
+- fonte: https://www.canva.com/ <br>
 
-🌟 **Figma** fizemos a nossa rafe, para definir posições de elementos e componentes do site <br>
-- https://www.figma.com/ <br> ![icons8-figma-48](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/1d9485a5-f9dc-448e-9504-86b47d0a492b)
+ ![icons8-figma-48](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/1d9485a5-f9dc-448e-9504-86b47d0a492b) **Figma** fizemos a nossa rafe, para definir posições de elementos e componentes do site <br>
+- https://www.figma.com/ <br>
 
 
 🌟 **icons8** pegamos os icones para estilizar o site, como por exemplo do header (baixamos como imagem). <br> 
@@ -51,4 +51,46 @@ Banners de autoria própria do grupo.
 
 ## Framework utilizado:
 ### ![icons8-angular-24](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/5c20dee2-8bf7-4e5a-bec8-6e6220c85906)  Angular
+
+escrever motivo
+
+# Responsividade:
+## Home:
+https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/ff99998c-af7f-46c7-b87f-717b04b7110a 
+
+## Login:
+
+https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1655-4082-a5e2-bf624be61cd8
+
+
+# Figma X Site Final
+
+### Home:
+
+- Na home conseguimos ser bem fiel ao figma e fazer todos os componentes que decidimos no inicio do projeto, como o header, o carroussel, os cards, os diferenciais, comentários dos clientes, agendamento de visita, fale conosco e o footer. <br>
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/920d7e8d-f827-4a78-a996-97ee6ecbb816)
+
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/f69a51e5-bdd8-4b5d-93c3-369ecdd9bd0d)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/a7aee56b-e960-4c90-b929-2215e4357e5b)    ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/de80a575-9c90-4e49-87d5-00656a795131)
+
+## Login:
+
+- Inicialmente queriamos fazer o login ao lado do cadastro, porém mudamos e fizemos o login com a transição para o cadastro, fazendo assim só aparecer um por vez e só mudando quando é clicado na parte inferior;
+- Resolvemos tirar o agendamento de visita e o fale conosco, pois assim ela tem um visual melhor.
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/e06bc46e-dd9d-45d2-888d-a876e1e01797)
+
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/7633aeae-2853-4617-9139-bc4e8de5d478)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/3ee8b599-4c30-4baa-8618-78cf1d0c0899)
+
+
+
+
+
+
+
+
+
+
+
+
 
