@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA,NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,7 +7,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginCadastroComponent } from './components/login-cadastro/login-cadastro.component';
 import { CarouselModule } from '@coreui/angular';
 import { HomeComponent } from './view/home/home.component';
-import { CarroselComponent } from './components/carrosel/carrosel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { BannerInformacoesComponent } from './components/banner-informacoes/banner-informacoes.component';
+import { ComentariosComponent } from './components/comentarios/comentarios.component';
+import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
+import { AgendamentoComponent } from './components/agendamento/agendamento.component';
+import { LoginComponent } from './view/login/login.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
+import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +25,14 @@ import { CarroselComponent } from './components/carrosel/carrosel.component';
     FooterComponent,
     LoginCadastroComponent,
     HomeComponent,
-    CarroselComponent
+    CarouselComponent,
+    BannerInformacoesComponent,
+    ComentariosComponent,
+    SobreNosComponent,
+    AgendamentoComponent,
+    LoginComponent,
+    ServicosComponent,
+    PgServicoComponent,
   ],
 
   imports: [
@@ -25,6 +41,7 @@ import { CarroselComponent } from './components/carrosel/carrosel.component';
     CarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

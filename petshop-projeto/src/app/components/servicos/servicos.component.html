@@ -1,0 +1,22 @@
+<body>
+  <form class="plan-chooser">
+    <div class="header">
+      <span class="title">Escolha seu plano</span>
+    </div>
+
+    <div class="plan-option" *ngFor="let item of itens" (click)="selecionarItem(item)" [ngClass]="{ 'selected': item === itemSelecionado }" >
+    
+      <label >
+        <div class="plan-info">
+          <span class="plan-cost">{{item.preco}}</span>
+          <span class="plan-name">{{item.nome}}</span>
+        </div>
+      </label>
+    </div>
+
+    
+    <a title="" (click)="adicionarAoCarrinho()" class="choose-btn"> Escolher plano </a>
+
+  </form>
+
+</body>

@@ -1,0 +1,120 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin: 0;
+    
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    box-shadow: 0 10px 15px #ca86ef;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    margin: 10px;
+   
+    width: 300px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #8f19cf;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -2px;
+    margin-bottom: -3px;
+}
+
+.content .para img {
+    width: 50px;
+    height: auto;
+}
+
+.content .para {
+    line-height: 1.5;
+}
+
+.content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #E2B6C5 0%, #9A6AB4 100%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #E2B6C5 0%, #9A6AB4 100%);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+    height: 100%;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+}
+
+.content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+}
+
+.content .btn:active {
+    box-shadow: none;
+}
+
+.card:hover .content {
+    color: #ffffff;
+}
+
+/* Adicionando media queries para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+    }
+    .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+    .card {
+        width: calc(100% - 20px); /* Cartões ocupam 100% da largura disponível */
+    }
+}
