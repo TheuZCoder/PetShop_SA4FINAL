@@ -3,14 +3,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 30vh;
     margin: 0;
     
 }
 
 .cards-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 800px;
     width: 100%;

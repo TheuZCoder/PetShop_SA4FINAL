@@ -6,6 +6,7 @@ body {
   
   .conteudo {
     /* Estilo para o conteúdo principal, ajuste conforme necessário */
+    height: 35dvh;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -30,6 +31,9 @@ body {
   
   form {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   label {
@@ -103,4 +107,11 @@ button:hover .border {
    }
    .area-contato h3 {
     color: #83BD4C; /* Substitua #ff0000 pelo código da cor desejada */
+}
+
+@media screen and (max-width: 600px) {
+  .conteudo{
+    height: 55vh;
+    margin-bottom: 0px;
+  }
 }
