@@ -118,7 +118,7 @@ body {
         width: calc(100% - 20px); /* Cartões ocupam 100% da largura disponível */
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1360px) {
     .conteudo{
       height: 40vh;
       margin-bottom: 0px;
