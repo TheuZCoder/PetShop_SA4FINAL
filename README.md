@@ -52,7 +52,7 @@ Banners de autoria própria do grupo.
 ## Framework utilizado:
 ### ![icons8-angular-24](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/5c20dee2-8bf7-4e5a-bec8-6e6220c85906)  Angular
 
-escrever motivo
+- Optamos por esse Framework pois ele tem a componentização eficiente, esquemas de rotas, uso de css ou scss e uso de type script.
 
 # Responsividade:
 ## Home:
@@ -67,7 +67,9 @@ https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1
 
 ### Home:
 
-- Na home conseguimos ser bem fiel ao figma e fazer todos os componentes que decidimos no inicio do projeto, como o header, o carroussel, os cards, os diferenciais, comentários dos clientes, agendamento de visita, fale conosco e o footer. <br>
+- Na home conseguimos ser bem fiel ao figma e fazer todos os componentes que decidimos no inicio do projeto, como o header, o carroussel, os cards, os diferenciais, comentários dos clientes, agendamento de visita, fale conosco e o footer.
+
+  
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/920d7e8d-f827-4a78-a996-97ee6ecbb816)
 
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/f69a51e5-bdd8-4b5d-93c3-369ecdd9bd0d)
@@ -76,7 +78,9 @@ https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1
 ## Login:
 
 - Inicialmente queriamos fazer o login ao lado do cadastro, porém mudamos e fizemos o login com a transição para o cadastro, fazendo assim só aparecer um por vez e só mudando quando é clicado na parte inferior;
-- Resolvemos tirar o agendamento de visita e o fale conosco, pois assim ela tem um visual melhor.
+- Resolvemos tirar o agendamento de visita e o fale conosco, pois assim a página tem um visual melhor.
+
+  
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/e06bc46e-dd9d-45d2-888d-a876e1e01797)
 
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/7633aeae-2853-4617-9139-bc4e8de5d478)
