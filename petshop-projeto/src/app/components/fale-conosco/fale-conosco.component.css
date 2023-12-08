@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .conteudo {
+    /* Estilo para o conteúdo principal, ajuste conforme necessário */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .area-contato {
+    background-color: #E88F4A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 80%; /* ajuste a largura conforme necessário */
+    margin: 20px auto; /* centraliza o retângulo */
+    border-top-left-radius: 8px; /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 8px; /* Arredonda o canto superior direito */
+    border-bottom-left-radius: 8px; /* Mantém o canto inferior esquerdo reto */
+    border-bottom-right-radius: 8px; /* Mantém o canto inferior direito reto */
+    border: 1px solid #ccc; /* Adicione uma borda para destacar as bordas arredondadas */
+    box-sizing: border-box; /* Garante que o tamanho total inclui a borda e o preenchimento */
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  textarea {
+    width: calc(100% - 16px); /* Ajuste da largura com margem à esquerda */
+    padding: 8px;
+    margin-bottom: 12px;
+    border-top-left-radius: 8px; /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 8px; /* Arredonda o canto superior direito */
+    border-bottom-left-radius: 8px; /* Mantém o canto inferior esquerdo reto */
+    border-bottom-right-radius: 8px; /* Mantém o canto inferior direito reto */
+    border: 1px solid #ccc; /* Adicione uma borda para destacar as bordas arredondadas */
+    box-sizing: border-box; /* Garante que o tamanho total inclui a borda e o preenchimento */
+}
+
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #fff;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button span {
+    color: #464646;
+   }
+   button .border {
+    position: absolute;
+    border: 0.10em solid #9A6AB4;  /* Ajuste a cor da borda conforme necessário */
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 8em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+}
+
+button:hover .border {
+    width: 22vh;  /* Ajuste a largura conforme necessário */
+    height: 9vh; /* Ajuste a altura conforme necessário */
+}
+
+  
+  
+
+   
+   
+   .full-rounded {
+    border-radius: 2em;
+   }
+   .area-contato h3 {
+    color: #83BD4C; /* Substitua #ff0000 pelo código da cor desejada */
+}
