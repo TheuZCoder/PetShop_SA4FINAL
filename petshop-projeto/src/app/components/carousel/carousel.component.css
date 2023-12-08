@@ -42,3 +42,14 @@ swiper-container img {
         height: auto; /* Mantenha a proporção da imagem */
     }
 }
+@media screen and (max-width: 1500px) {
+    swiper-container {
+        height: 300px; /* Ajuste a altura para dispositivos móveis */
+    }
+
+    swiper-container img {
+        aspect-ratio: 50 / 9; /* Altere a razão de aspecto para a largura da imagem ser ajustável */
+        max-width: 100%; /* Garanta que a largura da imagem não ultrapasse a largura do contêiner pai */
+        height: auto; /* Mantenha a proporção da imagem */
+    }
+}

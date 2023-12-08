@@ -15,6 +15,8 @@ import { AgendamentoComponent } from './components/agendamento/agendamento.compo
 import { LoginComponent } from './view/login/login.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
+import { FaleConoscoComponent } from './components/fale-conosco/fale-conosco.component';
+
 
 
 
@@ -33,6 +35,7 @@ import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
     LoginComponent,
     ServicosComponent,
     PgServicoComponent,
+    FaleConoscoComponent
   ],
 
   imports: [
