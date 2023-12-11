@@ -5,13 +5,19 @@
         </a>
     </div>
     <div class="search-bar">
-        <input type="search" placeholder="Pesquisar"/>
+        <input type="search" placeholder="Pesquisar" />
         <button><a href=""><img src="/assets/icons8-pesquisar-30.png" alt=""></a></button>
         <div class="menu-icon">&#9776;</div>
     </div>
+    <div class="icones" *ngIf="clienteService.isLoggedIn; else loginButton">
+        <button (click)="editProfile()">Editar Perfil</button>
+        <button (click)="logoutUser()">Sair</button>
+    </div>
     <div class="icones">
+        <ng-template #loginButton>
         <a class="select1" routerLink="login"><img src="assets/icons8-account-48.png" alt=""></a>
-        <a class="select2" (click)="mostrarElemento()" ><img src="assets/icons8-shopping-cart-50bran.png" alt=""></a>
+        </ng-template>
+        <a class="select2" (click)="mostrarElemento()"><img src="assets/icons8-shopping-cart-50bran.png" alt=""></a>
     </div>
 
     <div class="cart" [style.transform]="transformValue">
@@ -26,16 +32,16 @@
                     <div class="cart-price">{{item.preco}}</div>
                     <input type="number" value="1" class="cart-quantity">
                 </div>
-                <img src="/assets/lixeira.png" alt="" (click)="removerDoCarrinho(item)"  class="cart-remove">
+                <img src="/assets/lixeira.png" alt="" (click)="removerDoCarrinho(item)" class="cart-remove">
             </div>
         </div>
         <div class="total">
             <div class="total-title">Total</div>
             <div class="total-price">$0</div>
         </div>
-    
+
         <button type="button" class="btn-buy">Compre Agora</button>
         <img src="/assets/close.png" alt="" id="close-cart" (click)="esconderElemento()">
-        
+
     </div>
 </nav>

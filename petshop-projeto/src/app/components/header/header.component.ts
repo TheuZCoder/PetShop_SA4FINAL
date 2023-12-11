@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { CarrinhoService } from '../../service/carrinho.service';
+import { ClienteService } from 'src/app/service/cliente.service';
 
 @Component({
   selector: 'app-header',
@@ -19,10 +20,19 @@ export class HeaderComponent  {
   }
   itens: any[];
 
-  constructor(private carrinhoService: CarrinhoService) {
+  constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService) {
     this.itens = this.carrinhoService.obterCarrinho();
   }
   removerDoCarrinho(item: any) {
     this.carrinhoService.removerDoCarrinho(item);
   }
+  editProfile() {
+    // Lógica para redirecionar para a página de edição de perfil
+  }
+
+  logoutUser() {
+    this.clienteService.logoutUser();
+    // Lógica para redirecionar para a página de login ou para a home, por exemplo
+  }
+  loginButton: any; // Adicione esta linha
 }
