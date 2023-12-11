@@ -5,6 +5,18 @@
       "email": "matheus@gmail.com",
       "senha": "senha",
       "id": 1
+    },
+    {
+      "nome": "rodrigues",
+      "email": "rodrigues@zaccaria.com.br",
+      "senha": "senha",
+      "id": 2
+    },
+    {
+      "nome": "fernanda",
+      "email": "fernanda@gmail.com",
+      "senha": "senha",
+      "id": 3
     }
   ]
 }

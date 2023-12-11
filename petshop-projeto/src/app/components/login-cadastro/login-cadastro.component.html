@@ -3,12 +3,15 @@
         <input type="checkbox" id="chk" aria-hidden="true">
     
         <div class="login" id="loginForm">
-            <form class="form" (ngSubmit)="login()" #loginForm="ngForm">
+            <form class="form"  #loginForm="ngForm">
                 <label aria-hidden="true">Login</label>
-                <input class="input" type="email" name="email" ngModel required placeholder="Email: " required="">
-                <input class="input" type="password" name="pswd" ngModel required placeholder="Senha:" required="">
-                <button [disabled]="cadastroForm.invalid" >Login</button>
+                <input class="input" type="email" name="email" [(ngModel)]="username" placeholder="Email: " required="">
+                <input class="input" type="password" name="pswd" [(ngModel)]="password" placeholder="Senha:" required="">
+                <button (click)="login()" >Login</button>
                 <label for="chk">Cadastre-se</label>
+                <div *ngIf="errorMessage" class="error-message">
+                    {{ errorMessage }}
+                  </div>
             </form>
         </div>
     

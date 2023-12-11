@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cliente } from 'src/app/modelo/cliente.model';
 import { ClienteService } from 'src/app/service/cliente.service';
 
@@ -8,7 +9,7 @@ import { ClienteService } from 'src/app/service/cliente.service';
   styleUrls: ['./login-cadastro.component.css']
 })
 export class LoginCadastroComponent {
-  constructor(private clienteService: ClienteService) {}
+  constructor(private clienteService: ClienteService, private router: Router) {}
 
   novoCliente: Cliente = { nome: '', email: '', senha: '' };
 
@@ -18,17 +19,20 @@ export class LoginCadastroComponent {
     });
   }
 
+  username: string = '';
+  password: string = '';
+  errorMessage: string = '';
 
   login(): void {
-    const email = '';
-    const senha = '';
-    
-    this.clienteService.fazerLogin(email, senha).subscribe(response => {
-      if (response.length > 0) {
-        console.log('Login bem-sucedido'+ email + senha);
-      } else {
-        console.log('Credenciais inválidas');
-      }
-    });
+    this.clienteService.loginUser(this.username, this.password)
+      .subscribe((isAuthenticated: boolean) => {
+        if (isAuthenticated) {
+          // Redirecione para a página principal
+          this.router.navigate(['']);
+        } else {
+          // Exiba uma mensagem de erro personalizada
+          this.errorMessage = 'Credenciais inválidas. Por favor, verifique seu usuário e senha.';
+        }
+      });
   }
 }
