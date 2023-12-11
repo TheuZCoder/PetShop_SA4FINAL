@@ -122,3 +122,13 @@ button:hover .border {
     margin-bottom: 0px;
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .conteudo{
+    height: 65vh;
+    margin-bottom: 0px;
+  }
+  .area-contato{
+    width: 88%;
+  }
+}
