@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map} from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map, tap} from 'rxjs/operators';
 import { Cliente } from '../modelo/cliente.model';
 import { CarrinhoService } from './carrinho.service';
 
@@ -19,7 +19,13 @@ export class ClienteService {
 
 
   cadastrarCliente(cliente: any): Observable<any> {
-    return this.http.post(this.apiUrl, cliente);
+    return this.http.post<any>(this.apiUrl, cliente).pipe(
+      tap(data => console.log('Cliente cadastrado com sucesso:', data)),
+      catchError(error => {
+        console.error('Erro ao cadastrar cliente:', error);
+        return throwError(error);
+      })
+    );
   }
 
   getUsers(): Observable<Cliente[]> {

@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@angular/material": "^17.0.2",
-    "swiper": "^11.0.5"
-  }
-}

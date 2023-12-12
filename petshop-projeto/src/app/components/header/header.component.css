@@ -250,3 +250,16 @@ body {
         display: none; /* Oculta os links em telas menores */
     }
 }
+@media only screen and (max-width: 600px) {
+    .cart {
+      width: 100%;
+      transform: translateX();
+    }
+  }
+  
+  /* Estilo para telas médias e grandes */
+  @media only screen and (min-width: 601px) {
+    .cart {
+      width: 400px; /* ou ajuste conforme necessário */
+    }
+  }
