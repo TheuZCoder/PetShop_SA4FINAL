@@ -19,7 +19,7 @@ export class HeaderComponent  {
   transformValue: string = 'translateX(calc(-885px))';
 
   mostrarElemento(): void {
-    this.transformValue = 'translateX(calc(-495px))';
+    this.transformValue = 'translateX(calc(-435px))';
   }
 
   esconderElemento(): void {

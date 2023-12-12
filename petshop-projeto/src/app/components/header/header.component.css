@@ -208,6 +208,8 @@ body {
     height: 20px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     /* Estilos para telas menores, por exemplo, dispositivos móveis */
     .nav {
