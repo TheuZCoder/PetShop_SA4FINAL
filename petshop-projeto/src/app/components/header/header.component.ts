@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { CarrinhoService } from '../../service/carrinho.service';
 import { ClienteService } from 'src/app/service/cliente.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,12 @@ import { ClienteService } from 'src/app/service/cliente.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent  {
+
+  ngOnInit() {
+    this.carrinhoService.carrinho$.subscribe(novoCarrinho => {
+      this.itens = novoCarrinho;
+    });
+  }
   
   transformValue: string = 'translateX(calc(-885px))';
 
@@ -20,7 +27,7 @@ export class HeaderComponent  {
   }
   itens: any[];
 
-  constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService) {
+  constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService, private router: Router) {
     this.itens = this.carrinhoService.obterCarrinho();
   }
   removerDoCarrinho(item: any) {
@@ -31,7 +38,9 @@ export class HeaderComponent  {
   }
 
   logoutUser() {
+    this.carrinhoService.limparCarrinho();
     this.clienteService.logoutUser();
+    this.router.navigate(['']);
     // Lógica para redirecionar para a página de login ou para a home, por exemplo
   }
   loginButton: any; // Adicione esta linha

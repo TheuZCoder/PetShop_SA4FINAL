@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,12 +8,17 @@ export class CarrinhoService {
 
   itens: any[] = [];
 
+  private carrinhoSubject = new BehaviorSubject<any[]>([]);
+  carrinho$ = this.carrinhoSubject.asObservable();
+
   adicionarAoCarrinho(item: any) {
-    this.itens.push(item);
+    const carrinhoAtual = this.carrinhoSubject.value;
+    carrinhoAtual.push(item);
+    this.carrinhoSubject.next([...carrinhoAtual]);
   }
 
   obterCarrinho() {
-    return this.itens;
+    return this.carrinhoSubject.value;
   }
 
   removerDoCarrinho(item: any) {
@@ -20,5 +26,8 @@ export class CarrinhoService {
     if (index !== -1) {
       this.itens.splice(index, 1);
     }
+  }
+  limparCarrinho() {
+    this.carrinhoSubject.next([]);
   }
 }
