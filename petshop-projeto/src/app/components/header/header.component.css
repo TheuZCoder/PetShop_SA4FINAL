@@ -15,6 +15,43 @@ body {
     padding: 0.3%;
 }
 
+.btnSair{
+    margin-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f8d7da; /* Cor de fundo (vermelho no exemplo) */
+  color: #6f42c1; /* Cor do texto (branco no exemplo) */
+  border: none; /* Cor da borda (vermelho no exemplo) */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+.btnSair:hover{
+    background-color: white; /* Cor de fundo ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    border-color: white; /* Cor da borda ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    color: #6f42c1; /* Cor do texto ao passar o mouse (branco no exemplo) */
+}
+.btnPerfil{
+    font-weight: bold;
+    font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: none; /* Cor da borda roxa */
+  border-radius: 5px; /* Borda arredondada */
+  color: #6f42c1; /* Cor do texto roxo */
+  background-color: #f8d7da; /* Cor de fundo vermelho claro para o estado padrão */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+.btnPerfil:hover{
+    background-color: white; /* Cor de fundo ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    border-color: white; /* Cor da borda ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    color: #6f42c1; /* Cor do texto ao passar o mouse (branco no exemplo) */
+}
+
+
 .nav .logo a {
     text-decoration: none;
     color: white;

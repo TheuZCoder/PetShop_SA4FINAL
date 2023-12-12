@@ -9,9 +9,9 @@
         <button><a href=""><img src="/assets/icons8-pesquisar-30.png" alt=""></a></button>
         <div class="menu-icon">&#9776;</div>
     </div>
-    <div class="icones" *ngIf="clienteService.isLoggedIn; else loginButton">
-        <button (click)="editProfile()">Editar Perfil</button>
-        <button (click)="logoutUser()">Sair</button>
+    <div class="iconeshidden" *ngIf="clienteService.isLoggedIn; else loginButton">
+        <button class="btnPerfil" (click)="editProfile()">Editar Perfil</button>
+        <button class="btnSair" (click)="logoutUser()">Sair</button>
     </div>
     <div class="icones">
         <ng-template #loginButton>
