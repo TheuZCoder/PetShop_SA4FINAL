@@ -9,14 +9,14 @@ import { ClienteService } from 'src/app/service/cliente.service';
 })
 export class HeaderComponent  {
   
-  transformValue: string = 'translateX(calc(-420px))';
+  transformValue: string = 'translateX(calc(-885px))';
 
   mostrarElemento(): void {
-    this.transformValue = 'translateX(calc(-20px))';
+    this.transformValue = 'translateX(calc(-495px))';
   }
 
   esconderElemento(): void {
-    this.transformValue = 'translateX(calc(-420px))';
+    this.transformValue = 'translateX(calc(-885px))';
   }
   itens: any[];
 
