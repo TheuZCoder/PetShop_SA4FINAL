@@ -18,5 +18,13 @@
       "senha": "senha",
       "id": 3
     }
+  ],
+  "planos": [
+    { "id": 1, "nome": "Diaria", "preco": "R$72,00/" },
+    { "id": 2, "nome": "1 Semana", "preco": "R$145,00/" },
+    { "id": 3, "nome": "2 Semana", "preco": "R$185,00/" },
+    { "id": 4, "nome": "3 Semana", "preco": "R$254,00/" },
+    { "id": 5, "nome": "1 Mês", "preco": "R$268,00/" },
+    { "id": 6, "nome": "6 Meses", "preco": "R$400,50/" }
   ]
 }
