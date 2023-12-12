@@ -16,6 +16,9 @@ import { LoginComponent } from './view/login/login.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
 import { FaleConoscoComponent } from './components/fale-conosco/fale-conosco.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -35,13 +38,17 @@ import { FaleConoscoComponent } from './components/fale-conosco/fale-conosco.com
     LoginComponent,
     ServicosComponent,
     PgServicoComponent,
-    FaleConoscoComponent
+    FaleConoscoComponent,
+
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    HttpClientModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent],

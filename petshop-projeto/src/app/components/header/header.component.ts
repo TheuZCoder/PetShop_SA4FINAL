@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { CarrinhoService } from '../../service/carrinho.service';
+import { ClienteService } from 'src/app/service/cliente.service';
 
 @Component({
   selector: 'app-header',
@@ -8,21 +9,30 @@ import { CarrinhoService } from '../../service/carrinho.service';
 })
 export class HeaderComponent  {
   
-  transformValue: string = 'translateX(calc(-420px))';
+  transformValue: string = 'translateX(calc(-885px))';
 
   mostrarElemento(): void {
-    this.transformValue = 'translateX(calc(-20px))';
+    this.transformValue = 'translateX(calc(-495px))';
   }
 
   esconderElemento(): void {
-    this.transformValue = 'translateX(calc(-420px))';
+    this.transformValue = 'translateX(calc(-885px))';
   }
   itens: any[];
 
-  constructor(private carrinhoService: CarrinhoService) {
+  constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService) {
     this.itens = this.carrinhoService.obterCarrinho();
   }
   removerDoCarrinho(item: any) {
     this.carrinhoService.removerDoCarrinho(item);
   }
+  editProfile() {
+    // Lógica para redirecionar para a página de edição de perfil
+  }
+
+  logoutUser() {
+    this.clienteService.logoutUser();
+    // Lógica para redirecionar para a página de login ou para a home, por exemplo
+  }
+  loginButton: any; // Adicione esta linha
 }

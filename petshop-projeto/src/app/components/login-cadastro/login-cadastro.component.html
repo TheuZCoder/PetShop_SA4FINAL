@@ -3,22 +3,25 @@
         <input type="checkbox" id="chk" aria-hidden="true">
     
         <div class="login" id="loginForm">
-            <form class="form">
+            <form class="form"  #loginForm="ngForm">
                 <label aria-hidden="true">Login</label>
-                <input class="input" type="email" name="email" placeholder="Email: " required="">
-                <input class="input" type="password" name="pswd" placeholder="Senha:" required="">
-                <button>Login</button>
+                <input class="input" type="email" name="email" [(ngModel)]="username" placeholder="Email: " required="">
+                <input class="input" type="password" name="pswd" [(ngModel)]="password" placeholder="Senha:" required="">
+                <button (click)="login()" >Login</button>
                 <label for="chk">Cadastre-se</label>
+                <div *ngIf="errorMessage" class="error-message">
+                    {{ errorMessage }}
+                  </div>
             </form>
         </div>
     
         <div class="register">
-            <form class="form">
+            <form class="form" (ngSubmit)="cadastrar()" #cadastroForm="ngForm">
                 <label aria-hidden="true">Cadastre-se</label>
-                <input class="input" type="text" name="txt" placeholder="Nome:" required="">
-                <input class="input" type="email" name="email" placeholder="Email:" required="">
-                <input class="input" type="password" name="pswd" placeholder="Senha:" required="">
-                <button class="button2">Cadastre-se</button>
+                <input class="input" type="text" name="txt" [(ngModel)]="novoCliente.nome" required="">
+                <input class="input" type="email" name="email" [(ngModel)]="novoCliente.email" required="">
+                <input class="input" type="password" name="pswd" [(ngModel)]="novoCliente.senha" required="">
+                <button class="button2" type="submit" [disabled]="cadastroForm.invalid">Cadastre-se</button>
                 <label for="chk">Fazer Login</label>
             </form>
         </div>
