@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CarrinhoService } from '../../service/carrinho.service';
+import { ClienteService } from 'src/app/service/cliente.service';
 
 @Component({
   selector: 'app-servicos',
@@ -16,7 +17,7 @@ export class ServicosComponent {
     { nome: '6 Mêses', preco: 'R$'+'400,50' },
   ];
 
-  constructor(private carrinhoService: CarrinhoService) {}
+  constructor(private carrinhoService: CarrinhoService, private clienteService: ClienteService) {}
 
   selecionarItem(item: any) {
     this.itemSelecionado = item;
@@ -25,9 +26,13 @@ export class ServicosComponent {
   itemSelecionado: any;
 
   adicionarAoCarrinho() {
-    if (this.itemSelecionado) {
-      this.carrinhoService.adicionarAoCarrinho(this.itemSelecionado);
-      this.itemSelecionado = null; // Limpar a seleção após adicionar ao carrinho
+    if (this.clienteService.isAuthenticated()) {
+      if (this.itemSelecionado) {
+        this.carrinhoService.adicionarAoCarrinho(this.itemSelecionado);
+        this.itemSelecionado = null;
+      }
+    } else {
+      console.log('Você precisa estar logado para adicionar itens ao carrinho.');
     }
   }
 }

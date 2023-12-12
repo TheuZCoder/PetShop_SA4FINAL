@@ -11,6 +11,11 @@ export class ClienteService {
   private apiUrl = 'http://localhost:3000/clientes';
   public isLoggedIn = false; // Torna a propriedade pública
 
+  isAuthenticated(): boolean {
+    // Sua lógica de verificação de autenticação aqui
+    return this.isLoggedIn;
+  }
+
   constructor(private http: HttpClient) {}
 
   cadastrarCliente(cliente: any): Observable<any> {
