@@ -22,9 +22,12 @@ export class CarrinhoService {
   }
 
   removerDoCarrinho(item: any) {
-    const index = this.itens.indexOf(item);
+    const carrinhoAtual = this.carrinhoSubject.value;
+    const index = carrinhoAtual.indexOf(item);
+
     if (index !== -1) {
-      this.itens.splice(index, 1);
+      carrinhoAtual.splice(index, 1);
+      this.carrinhoSubject.next([...carrinhoAtual]);
     }
   }
   limparCarrinho() {

@@ -71,3 +71,9 @@ body {
       height: 55vh;
     }
   }
+
+@media screen and (max-width: 960px) {
+    .conteudo{
+      height: 55vh;
+    }
+}
