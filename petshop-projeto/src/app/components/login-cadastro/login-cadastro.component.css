@@ -30,6 +30,11 @@ body {
 #chk {
   display: none;
 }
+.mensagemErro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .login label,
 .register label {

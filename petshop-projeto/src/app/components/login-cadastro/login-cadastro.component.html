@@ -9,7 +9,7 @@
                 <input class="input" type="password" name="pswd" [(ngModel)]="password" placeholder="Senha:" required="">
                 <button (click)="login()" >Login</button>
                 <label for="chk">Cadastre-se</label>
-                <div *ngIf="errorMessage" class="error-message">
+                <div ngClass="mensagemErro" *ngIf="errorMessage" class="error-message">
                     {{ errorMessage }}
                   </div>
             </form>
@@ -18,9 +18,9 @@
         <div class="register">
             <form class="form" (ngSubmit)="cadastrar()" #cadastroForm="ngForm">
                 <label aria-hidden="true">Cadastre-se</label>
-                <input class="input" type="text" name="txt" [(ngModel)]="novoCliente.nome" required="">
-                <input class="input" type="email" name="email" [(ngModel)]="novoCliente.email" required="">
-                <input class="input" type="password" name="pswd" [(ngModel)]="novoCliente.senha" required="">
+                <input class="input" type="text" name="txt" [(ngModel)]="novoCliente.nome" placeholder="Nome: " required="">
+                <input class="input" type="email" name="email" [(ngModel)]="novoCliente.email" placeholder="Email: " required="">
+                <input class="input" type="password" name="pswd" [(ngModel)]="novoCliente.senha" placeholder="Senha: " required="">
                 <button class="button2" type="submit" [disabled]="cadastroForm.invalid">Cadastre-se</button>
                 <label for="chk">Fazer Login</label>
             </form>
