@@ -72,8 +72,8 @@ body {
     }
   }
 
-@media screen and (max-width: 960px) {
-    .conteudo{
-      height: 55vh;
+@media screen and (max-width: 1920px) {
+    .comment-section {
+        height: 50dvh;
     }
 }
