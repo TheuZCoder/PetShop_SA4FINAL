@@ -12,7 +12,6 @@ export class ClienteService {
   public isLoggedIn = false; // Torna a propriedade pública
 
   isAuthenticated(): boolean {
-    // Sua lógica de verificação de autenticação aqui
     return this.isLoggedIn;
   }
 
