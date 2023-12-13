@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,HostListener,OnInit } from '@angular/core';
 import { CarrinhoService } from '../../service/carrinho.service';
 import { ClienteService } from 'src/app/service/cliente.service';
 import { Router } from '@angular/router';
@@ -16,15 +16,25 @@ export class HeaderComponent  {
     });
   }
   
-  transformValue: string = 'translateX(calc(-885px))';
+  transformValue: string | undefined;
+  ajustarPosicaoCarrinho() {
+    const windowWidth = window.innerWidth;
+    this.transformValue = windowWidth > 1920 ? 'translateX(calc(440px))' : 'translateX(calc(-440px))';
+  }
 
-  mostrarElemento(): void {
-    this.transformValue = 'translateX(calc(-435px))';
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.ajustarPosicaoCarrinho();
   }
 
   esconderElemento(): void {
-    this.transformValue = 'translateX(calc(-885px))';
+    this.transformValue = 'translateX(calc(-440px))';
   }
+  
+  mostrarElemento(): void {
+    this.transformValue = 'translateX(calc(440px))';
+  }
+
   itens: any[];
 
   constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService, private router: Router) {

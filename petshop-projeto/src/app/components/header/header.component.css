@@ -104,21 +104,21 @@ body {
 .select2{
     cursor: pointer;
 }
-.cart{
-    transform: translateX(calc(-885px));
+.cart {
     position: fixed;
     top: 0;
+    left: -440px; /* Comece fora da tela */
     display: block;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
     background: purple;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-    transition: 0.3s;
+    transition: right 0.3s; /* Adicione a propriedade 'right' na transição */
     z-index: 9999;
-}
+  }
 .cart.active{
-    right: 0;
+    left: -440px;
 }
 
 .cart-title{
