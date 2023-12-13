@@ -9,7 +9,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent  {
-
+  
+  constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService, private router: Router) {
+    this.itens = this.carrinhoService.obterCarrinho();
+  }
+  //SERVIÇOS DO CARRINHO
   ngOnInit() {
     this.carrinhoService.carrinho$.subscribe(novoCarrinho => {
       this.itens = novoCarrinho;
@@ -36,13 +40,12 @@ export class HeaderComponent  {
   }
 
   itens: any[];
-
-  constructor(private carrinhoService: CarrinhoService, public clienteService: ClienteService, private router: Router) {
-    this.itens = this.carrinhoService.obterCarrinho();
-  }
+  
   removerDoCarrinho(item: any) {
     this.carrinhoService.removerDoCarrinho(item);
   }
+
+  //BOTÕES DE SAIR E EDITAR PERFIL
   editProfile() {
     // Lógica para redirecionar para a página de edição de perfil
   }
