@@ -18,6 +18,7 @@ import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
 import { FaleConoscoComponent } from './components/fale-conosco/fale-conosco.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegrasComponent } from './components/regras/regras.component';
 
 
 
@@ -39,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     ServicosComponent,
     PgServicoComponent,
     FaleConoscoComponent,
+    RegrasComponent,
 
   ],
 

@@ -16,7 +16,7 @@ export class LoginCadastroComponent {
   cadastrar(): void {
     this.clienteService.cadastrarCliente(this.novoCliente).subscribe(response => {
       console.log('Cadastro realizado com sucesso', response);
-      this.router.navigate(['login']);
+      this.router.navigate(['']);
     });
   }
 
