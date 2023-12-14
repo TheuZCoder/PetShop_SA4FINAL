@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegrasComponent } from './components/regras/regras.component';
 import { RegraViewComponent } from './view/regra-view/regra-view.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarioViewComponent } from './view/usuario-view/usuario-view.component';
 
 
 
@@ -43,6 +45,8 @@ import { RegraViewComponent } from './view/regra-view/regra-view.component';
     FaleConoscoComponent,
     RegrasComponent,
     RegraViewComponent,
+    UsuarioComponent,
+    UsuarioViewComponent,
 
   ],
 

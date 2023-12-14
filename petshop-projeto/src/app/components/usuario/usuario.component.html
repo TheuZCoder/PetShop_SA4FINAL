@@ -1,0 +1,22 @@
+<body>
+
+    <div class="container">
+        <div class="perfil">
+            <img src="img2/icons8-usuário-50.png" alt="">
+        </div>
+        <h2>Alterar Email e Senha</h2>
+
+        <label for="newEmail">Novo email:</label>
+        <input type="email" id="newEmail" name="newEmail" (ngModel)="cliente.nome" placeholder="Digite o novo email">
+
+        <label for="newPassword">Nova senha:</label>
+        <input type="password" id="newPassword" name="newPassword" (ngModel)="cliente.email" placeholder="Digite a nova senha">
+
+
+        <label for="newPassword">Confirme sua nova senha:</label>
+        <input type="password"  (ngModel)="cliente.senha" placeholder="Confirme a senha">
+
+        <button (click)="salvarAlteracoes()">Salvar alterações</button>
+    </div>
+
+</body>

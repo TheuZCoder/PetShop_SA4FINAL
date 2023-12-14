@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Alterado para 100% da altura da viewport */
+    margin: 0;
+}
+
+.container {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: calc(100% - 16px); /* Ajustado para incluir a margem no cálculo */
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box; /* Garante que a largura inclua padding */
+}
+
+button {
+    background-color: #9A6AB4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #754c8a; /* Ajustado para um tom mais escuro no hover */
+}
+
+.perfil {
+    margin-top: 20px; /* Ajustado para uma margem menor */
+}
+    
