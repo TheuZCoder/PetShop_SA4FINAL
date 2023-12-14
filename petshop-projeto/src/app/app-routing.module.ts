@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './view/home/home.component';
 import { LoginComponent } from './view/login/login.component';
 import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
+import { RegraViewComponent } from './view/regra-view/regra-view.component';
 
 const routes: Routes = [
   {
@@ -10,11 +11,16 @@ const routes: Routes = [
     component: HomeComponent
   },
 
+  {
+    path: 'regras',
+    component: RegraViewComponent
+  },
 
   {
     path: 'login',
     component: LoginComponent
   },
+
   {
     path: 'pg-servico',
     component: PgServicoComponent

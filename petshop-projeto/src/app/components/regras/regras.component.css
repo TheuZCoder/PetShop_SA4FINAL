@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Mukta:wght@200&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.card {
+  width: 85%;
+ /* Ajuste conforme necessário */
+  height: 254px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-content {
+    align-items: center;
+    justify-content: center;
+}
+
+.bd-placeholder-img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardesquerdo {
+  width: 85%;
+  height: 254px;
+  background-color: #a888b9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ 
+}
+
+.h201,
+.h202,
+.h203,
+.h204,
+.h205 {
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cordaycare {
+  color: #a888b9;
+}
+.cordaycare img{
+    width: 35px;
+    height: 35px;
+  }
+
+
+.horarios h2 {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+}
+
+.horarios img {
+  display: flex;
+}
+
+h2,
+h1.cordaycare {
+  font-size: 30px;
+}
+
+.cardsss {
+  width: 100%;
+  max-width: 1250px; /* Ajuste conforme necessário */
+  height: 300px;
+  color: #a888b9;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-size: 12px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
