@@ -26,8 +26,7 @@ app.use(bodyParser.json());
 app.post('/clientes', async (req, res) => {
   try {
     const { nome, email, senha } = req.body;
-
-    // Use o client para executar a consulta SQL, não o pool
+    
     const result = await client.query('INSERT INTO clientes (nome, email, senha) VALUES ($1, $2, $3) RETURNING id',
       [nome, email, senha]);
 

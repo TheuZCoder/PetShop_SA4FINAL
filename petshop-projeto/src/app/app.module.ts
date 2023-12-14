@@ -18,6 +18,10 @@ import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
 import { FaleConoscoComponent } from './components/fale-conosco/fale-conosco.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegraViewComponent } from './view/regra-view/regra-view.component';
+import { RegrasComponent } from './components/regras/regras.component';
+import { InfoPetshopComponent } from './components/info-petshop/info-petshop.component';
+import { InfoPgComponent } from './view/info-pg/info-pg.component';
 
 
 
@@ -39,6 +43,10 @@ import { HttpClientModule } from '@angular/common/http';
     ServicosComponent,
     PgServicoComponent,
     FaleConoscoComponent,
+    RegraViewComponent,
+    RegrasComponent,
+    InfoPetshopComponent,
+    InfoPgComponent,
 
   ],
 
