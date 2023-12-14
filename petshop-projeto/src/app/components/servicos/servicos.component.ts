@@ -1,22 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarrinhoService } from '../../service/carrinho.service';
+import { ClienteService } from 'src/app/service/cliente.service';
+import { PlanosService } from 'src/app/service/planos.service';
 
 @Component({
   selector: 'app-servicos',
   templateUrl: './servicos.component.html',
   styleUrls: ['./servicos.component.css']
 })
-export class ServicosComponent {
-  itens = [
-    { nome: 'Diaria', preco: 'R$'+72 },
-    { nome: '1 Semana', preco: 'R$'+ 145 },
-    { nome: '2 Semana', preco: 'R$'+ 185 },
-    { nome: '3 Semana', preco: 'R$'+ 254 },
-    { nome: '1 Mês', preco: 'R$'+ 268 },
-    { nome: '6 Mêses', preco: 'R$'+'400,50' },
-  ];
+export class ServicosComponent implements OnInit{
+  itens!: any[];
 
-  constructor(private carrinhoService: CarrinhoService) {}
+  constructor(private carrinhoService: CarrinhoService, private clienteService: ClienteService, private planosService: PlanosService) {}
+  ngOnInit(): void {
+    this.planosService.getPlanos().subscribe((planos) => {
+      this.itens = planos;
+    });
+  }
 
   selecionarItem(item: any) {
     this.itemSelecionado = item;
@@ -25,9 +25,13 @@ export class ServicosComponent {
   itemSelecionado: any;
 
   adicionarAoCarrinho() {
-    if (this.itemSelecionado) {
-      this.carrinhoService.adicionarAoCarrinho(this.itemSelecionado);
-      this.itemSelecionado = null; // Limpar a seleção após adicionar ao carrinho
+    if (this.clienteService.isAuthenticated()) {
+      if (this.itemSelecionado) {
+        this.carrinhoService.adicionarAoCarrinho(this.itemSelecionado);
+        this.itemSelecionado = null;
+      }
+    } else {
+      console.log('Você precisa estar logado para adicionar itens ao carrinho.');
     }
   }
 }

@@ -1,34 +1,29 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map, tap} from 'rxjs/operators';
 import { Cliente } from '../modelo/cliente.model';
+import { CarrinhoService } from './carrinho.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClienteService {
+  constructor(private http: HttpClient, private carrinhoService: CarrinhoService) {}
   private apiUrl = 'http://localhost:3000/clientes';
   public isLoggedIn = false; // Torna a propriedade pública
 
-  constructor(private http: HttpClient) {}
-
-  cadastrarCliente(cliente: any): Observable<any> {
-    return this.http.post(this.apiUrl, cliente);
+  isAuthenticated(): boolean {
+    return this.isLoggedIn;
   }
 
-  fazerLogin(email: string, senha: string): Observable<boolean> {
-    return this.http.get<Cliente[]>(`${this.apiUrl}?email=${email}&senha=${senha}`).pipe(
-      map((users: Cliente[]) => {
-        const user = users[0]; // Supondo que apenas um usuário corresponderá ao login
-        if (user) {
-          this.isLoggedIn = true;
-        }
-        return !!user; // Retorna true se o usuário for encontrado, false caso contrário
-      }),
+
+  cadastrarCliente(cliente: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, cliente).pipe(
+      tap(data => console.log('Cliente cadastrado com sucesso:', data)),
       catchError(error => {
-        this.isLoggedIn = false;
-        return of(false);
+        console.error('Erro ao cadastrar cliente:', error);
+        return throwError(error);
       })
     );
   }
@@ -49,5 +44,6 @@ export class ClienteService {
 
   logoutUser(): void {
     this.isLoggedIn = false;
+    this.carrinhoService.limparCarrinho();
   }
 }

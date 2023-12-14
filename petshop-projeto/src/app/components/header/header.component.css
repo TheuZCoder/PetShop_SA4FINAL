@@ -15,6 +15,43 @@ body {
     padding: 0.3%;
 }
 
+.btnSair{
+    margin-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f8d7da; /* Cor de fundo (vermelho no exemplo) */
+  color: #6f42c1; /* Cor do texto (branco no exemplo) */
+  border: none; /* Cor da borda (vermelho no exemplo) */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+.btnSair:hover{
+    background-color: white; /* Cor de fundo ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    border-color: white; /* Cor da borda ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    color: #6f42c1; /* Cor do texto ao passar o mouse (branco no exemplo) */
+}
+.btnPerfil{
+    font-weight: bold;
+    font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: none; /* Cor da borda roxa */
+  border-radius: 5px; /* Borda arredondada */
+  color: #6f42c1; /* Cor do texto roxo */
+  background-color: #f8d7da; /* Cor de fundo vermelho claro para o estado padrão */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+.btnPerfil:hover{
+    background-color: white; /* Cor de fundo ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    border-color: white; /* Cor da borda ao passar o mouse (um tom mais escuro de vermelho no exemplo) */
+    color: #6f42c1; /* Cor do texto ao passar o mouse (branco no exemplo) */
+}
+
+
 .nav .logo a {
     text-decoration: none;
     color: white;
@@ -67,21 +104,21 @@ body {
 .select2{
     cursor: pointer;
 }
-.cart{
-    transform: translateX(calc(-885px));
+.cart {
     position: fixed;
     top: 0;
+    left: -440px; /* Comece fora da tela */
     display: block;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
     background: purple;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-    transition: 0.3s;
+    transition: right 0.3s; /* Adicione a propriedade 'right' na transição */
     z-index: 9999;
-}
+  }
 .cart.active{
-    right: 0;
+    left: -440px;
 }
 
 .cart-title{
@@ -171,6 +208,8 @@ body {
     height: 20px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     /* Estilos para telas menores, por exemplo, dispositivos móveis */
     .nav {
@@ -211,3 +250,16 @@ body {
         display: none; /* Oculta os links em telas menores */
     }
 }
+@media only screen and (max-width: 600px) {
+    .cart {
+      width: 100%;
+      transform: translateX();
+    }
+  }
+  
+  /* Estilo para telas médias e grandes */
+  @media only screen and (min-width: 601px) {
+    .cart {
+      width: 400px; /* ou ajuste conforme necessário */
+    }
+  }

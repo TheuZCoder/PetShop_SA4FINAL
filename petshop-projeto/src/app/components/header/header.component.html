@@ -9,9 +9,9 @@
         <button><a href=""><img src="/assets/icons8-pesquisar-30.png" alt=""></a></button>
         <div class="menu-icon">&#9776;</div>
     </div>
-    <div class="icones" *ngIf="clienteService.isLoggedIn; else loginButton">
-        <button (click)="editProfile()">Editar Perfil</button>
-        <button (click)="logoutUser()">Sair</button>
+    <div class="iconeshidden" *ngIf="clienteService.isLoggedIn; else loginButton">
+        <button class="btnPerfil" (click)="editProfile()">Editar Perfil</button>
+        <button class="btnSair" (click)="logoutUser()">Sair</button>
     </div>
     <div class="icones">
         <ng-template #loginButton>
@@ -26,7 +26,7 @@
         </h2>
         <div class="cart-content" *ngFor="let item of itens">
             <div class="cart-box">
-                <img src="" alt="" class="cart-img">
+                <img class="cartFoto" src="../../../assets/img/DAYCARE.png" alt="" class="cart-img">
                 <div class="detail-box">
                     <div class="cart-product-title">{{item.nome}}</div>
                     <div class="cart-price">{{item.preco}}</div>

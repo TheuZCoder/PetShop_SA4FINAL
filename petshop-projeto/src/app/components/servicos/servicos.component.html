@@ -1,7 +1,7 @@
 <body>
   <form class="plan-chooser">
     <div class="header">
-      <span class="title">Escolha seu plano</span>
+      <span class="title">Escolha seu plano de Estadia</span>
     </div>
 
     <div class="plan-option" *ngFor="let item of itens" (click)="selecionarItem(item)" [ngClass]="{ 'selected': item === itemSelecionado }" >

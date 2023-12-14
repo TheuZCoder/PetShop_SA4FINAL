@@ -1,0 +1,31 @@
+-- Tabela para armazenar dados dos clientes
+CREATE TABLE clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
+
+-- Inserir dados dos clientes
+INSERT INTO clientes (nome, email, senha, id)
+VALUES
+    ('matheus', 'matheus@gmail.com', 'senha', 1),
+    ('rodrigues', 'rodrigues@zaccaria.com.br', 'senha', 2),
+    ('fernanda', 'fernanda@gmail.com', 'senha', 3);
+
+-- Tabela para armazenar dados dos planos
+CREATE TABLE planos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco VARCHAR(20) NOT NULL
+);
+
+-- Inserir dados dos planos
+INSERT INTO planos (id, nome, preco)
+VALUES
+    (1, 'Diaria', 'R$72,00/'),
+    (2, '1 Semana', 'R$145,00/'),
+    (3, '2 Semana', 'R$185,00/'),
+    (4, '3 Semana', 'R$254,00/'),
+    (5, '1 Mês', 'R$268,00/'),
+    (6, '6 Meses', 'R$400,50/');
