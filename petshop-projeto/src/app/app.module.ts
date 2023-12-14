@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegraViewComponent } from './view/regra-view/regra-view.component';
 import { RegrasComponent } from './components/regras/regras.component';
 import { InfoPetshopComponent } from './components/info-petshop/info-petshop.component';
+import { InfoPgComponent } from './view/info-pg/info-pg.component';
 
 
 
@@ -45,6 +46,7 @@ import { InfoPetshopComponent } from './components/info-petshop/info-petshop.com
     RegraViewComponent,
     RegrasComponent,
     InfoPetshopComponent,
+    InfoPgComponent,
 
   ],
 
