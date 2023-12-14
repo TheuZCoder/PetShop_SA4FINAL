@@ -94,10 +94,3 @@ h1.cordaycare {
   justify-content: space-around;
   align-items: center;
 }
-
-@media (max-width: 600px) {
-    .cardsss {
-      flex-direction: column; /* Altera para coluna em telas menores que 600px */
-      text-align: center; /* Centraliza o texto */
-    }
-  }
