@@ -87,6 +87,26 @@ https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/3ee8b599-4c30-4baa-8618-78cf1d0c0899)
 
 
+## DayCare:
+
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/8589ac7f-847b-429d-a1eb-aa9b313d98fc)
+
+## Sobre Nós: 
+
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/d6b83bb2-3116-4b29-bfbb-a3e307947dab)
+
+## Regras:
+
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/2fe5fb27-3b27-4e8e-802d-ebf6a45af5f2)
+
+## Carrinho: 
+
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/b76bab91-fad4-4a2b-809f-7de2e36cfe7a)
+
+
+
+
+
 
 
 
