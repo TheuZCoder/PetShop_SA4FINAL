@@ -19,7 +19,6 @@ import { FaleConoscoComponent } from './components/fale-conosco/fale-conosco.com
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegrasComponent } from './components/regras/regras.component';
-import { RegraViewComponent } from './view/regra-view/regra-view.component';
 
 
 
@@ -42,7 +41,6 @@ import { RegraViewComponent } from './view/regra-view/regra-view.component';
     PgServicoComponent,
     FaleConoscoComponent,
     RegrasComponent,
-    RegraViewComponent,
 
   ],
 
