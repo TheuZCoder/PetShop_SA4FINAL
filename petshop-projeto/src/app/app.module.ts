@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegraViewComponent } from './view/regra-view/regra-view.component';
 import { RegrasComponent } from './components/regras/regras.component';
+import { InfoPetshopComponent } from './components/info-petshop/info-petshop.component';
 
 
 
@@ -43,6 +44,7 @@ import { RegrasComponent } from './components/regras/regras.component';
     FaleConoscoComponent,
     RegraViewComponent,
     RegrasComponent,
+    InfoPetshopComponent,
 
   ],
 
