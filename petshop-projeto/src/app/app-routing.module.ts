@@ -4,7 +4,6 @@ import { HomeComponent } from './view/home/home.component';
 import { LoginComponent } from './view/login/login.component';
 import { PgServicoComponent } from './view/pg-servico/pg-servico.component';
 import { RegraViewComponent } from './view/regra-view/regra-view.component';
-import { UsuarioViewComponent } from './view/usuario-view/usuario-view.component';
 
 const routes: Routes = [
   {
@@ -25,11 +24,6 @@ const routes: Routes = [
   {
     path: 'pg-servico',
     component: PgServicoComponent
-  },
-
-  {
-  path: 'usuario',
-  component: UsuarioViewComponent
   }
 ];
 

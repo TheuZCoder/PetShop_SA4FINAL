@@ -47,7 +47,7 @@ export class HeaderComponent  {
 
   //BOTÕES DE SAIR E EDITAR PERFIL
   editProfile() {
-    this.router.navigate(['usuario']);
+    // Lógica para redirecionar para a página de edição de perfil
   }
 
   logoutUser() {
