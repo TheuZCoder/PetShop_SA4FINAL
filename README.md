@@ -90,10 +90,19 @@ Banners de autoria própria do grupo.
 
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/d6b83bb2-3116-4b29-bfbb-a3e307947dab)
 
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/cf30c787-dcc8-4690-a562-50175f5947b4)
+
+
+
+
+
+
 
 ## Regras:
 
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/2fe5fb27-3b27-4e8e-802d-ebf6a45af5f2)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/57000fa8-97a1-4b5e-8c03-00b11b8c0cf6)
+
 
 ## Carrinho: 
 
