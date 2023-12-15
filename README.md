@@ -54,13 +54,8 @@ Banners de autoria própria do grupo.
 
 - Optamos por esse Framework pois ele tem a componentização eficiente, esquemas de rotas, uso de css ou scss e uso de type script.
 
-# Responsividade:
-## Home:
-https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/ff99998c-af7f-46c7-b87f-717b04b7110a 
-
-## Login:
-
-https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1655-4082-a5e2-bf624be61cd8
+## API utilizada:
+- Utilizamos a API de Banner.
 
 
 # Figma X Site Final
@@ -95,9 +90,19 @@ https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1
 
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/d6b83bb2-3116-4b29-bfbb-a3e307947dab)
 
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/cf30c787-dcc8-4690-a562-50175f5947b4)
+
+
+
+
+
+
+
 ## Regras:
 
 ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/2fe5fb27-3b27-4e8e-802d-ebf6a45af5f2)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/57000fa8-97a1-4b5e-8c03-00b11b8c0cf6)
+
 
 ## Carrinho: 
 
@@ -107,6 +112,13 @@ https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1
 
 
 
+# Responsividade:
+## Home:
+https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/ff99998c-af7f-46c7-b87f-717b04b7110a 
+
+## Login:
+
+https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/10819c95-1655-4082-a5e2-bf624be61cd8
 
 
 
