@@ -62,35 +62,20 @@ Banners de autoria própria do grupo.
 
 ### Home:
 
-- Na home conseguimos ser bem fiel ao figma e fazer todos os componentes que decidimos no inicio do projeto, como o header, o carroussel, os cards, os diferenciais, comentários dos clientes, agendamento de visita, fale conosco e o footer.
 
-  
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/920d7e8d-f827-4a78-a996-97ee6ecbb816)
-
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/f69a51e5-bdd8-4b5d-93c3-369ecdd9bd0d)
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/a7aee56b-e960-4c90-b929-2215e4357e5b)    ![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/de80a575-9c90-4e49-87d5-00656a795131)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/291acacb-74aa-44c0-90bd-1a3765ba0bc5)
 
 ## Login:
 
-- Inicialmente queriamos fazer o login ao lado do cadastro, porém mudamos e fizemos o login com a transição para o cadastro, fazendo assim só aparecer um por vez e só mudando quando é clicado na parte inferior;
-- Resolvemos tirar o agendamento de visita e o fale conosco, pois assim a página tem um visual melhor.
-
-  
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/e06bc46e-dd9d-45d2-888d-a876e1e01797)
-
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/7633aeae-2853-4617-9139-bc4e8de5d478)
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/3ee8b599-4c30-4baa-8618-78cf1d0c0899)
 
 
-## DayCare:
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/2a49858b-f680-4b62-acd5-48562dbd1a6c)
 
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/8589ac7f-847b-429d-a1eb-aa9b313d98fc)
 
 ## Sobre Nós: 
 
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/d6b83bb2-3116-4b29-bfbb-a3e307947dab)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/b61584b6-a36c-43be-bd11-aad4737605a1)
 
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/cf30c787-dcc8-4690-a562-50175f5947b4)
 
 
 
@@ -99,14 +84,9 @@ Banners de autoria própria do grupo.
 
 
 ## Regras:
-
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/2fe5fb27-3b27-4e8e-802d-ebf6a45af5f2)
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/57000fa8-97a1-4b5e-8c03-00b11b8c0cf6)
+![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/f302eb99-2ae2-4306-84b9-84d4fb9bd59a)
 
 
-## Carrinho: 
-
-![image](https://github.com/ProjetoJavaDiogo/PetShop_SA4FINAL/assets/124289155/b76bab91-fad4-4a2b-809f-7de2e36cfe7a)
 
 
 
